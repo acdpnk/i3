@@ -204,11 +204,11 @@ bar {
         statusline #ffffff
         separator #666666
 
-        					#border 	#background 	#text
-        focused_workspace	#333333		#ffffff			#000000
-        active_workspace	#444444		#333333			#777777
-        inactive_workspace	#333333		#222222			#888888
-        urgent_workspace	#2f343a		#900000			#ffffff
+				#border 	#background 	#text
+        focused_workspace	#333333		#ffffff		#000000
+        active_workspace	#444444		#333333		#777777
+        inactive_workspace	#333333		#222222		#888888
+        urgent_workspace	#2f343a		#900000		#ffffff
     }
 	font pango:Source Code Pro Medium 9
         status_command /home/mrnda/.i3/my_i3status.sh
