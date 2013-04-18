@@ -10,8 +10,8 @@
 
 set $mod Mod4
 
-exec_always --No-startup-id xmodmap /etc/X11/Xmodmap
-exec --no-startup-id feh --bg-scale /home/mrnda/Pictures/datalove.png
+exec_always --No-startup-id xmodmap /home/mrnda/.dotfiles/.xmodmap
+exec --no-startup-id feh --bg-scale /home/mrnda/.dotfiles/datalove.png
 exec --no-startup-id synclient HorizScrollDelta=-26 VertScrollDelta=-26 HorizTwoFingerScroll=1 VertEdgeScroll=0
 exec --no-startup-id syndaemon -t -k -i 2 -d &
 exec --no-startup-id i3-msg 'workspace 1; exec terminator'
@@ -33,7 +33,7 @@ focus_follows_mouse no
 hide_edge_borders both
 
 # lock the screen
-bindsym $mod+Escape exec i3lock -c ffffff -i /home/mrnda/Pictures/lock.png
+bindsym $mod+Escape exec i3lock -c ffffff -i /home/mrnda/.dotfiles/lock.png
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
